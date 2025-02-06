@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activités - Health in Motion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand-container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/icons/logo.webp" alt="Health in Motion Logo" class="navbar-logo"> Health in Motion
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="activites.html">Activités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sommeil.html">Sommeil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="activity-banner">
+            <img src="https://static.ponroy.com/image/medias/CONSEILS/CONSEILS%20SANTE/VITALITE/activite_intensive_home.jpeg?p=advice_card" alt="Bannière Activités" class="activity-banner-image">
+            <div class="activity-banner-overlay">
+                <h1 class="activity-banner-title">Visualisez Vos Progrès, Boostez Votre Santé !</h1>
+
+            </div>
+        </div>
+
+        <div class="activity-content">
+            <p class="activity-intro">Explorez l'évolution de vos activités physiques. Chaque pas compte vers une meilleure version de vous-même.</p>
+
+            <div class="table-responsive">
+                <table id="tableauActivites" class="display responsive nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Activité</th>
+                            <th>Durée <span class="unit">(minutes)</span></th>
+                            <th>Calories <span class="unit">(kcal)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-02-01</td>
+                            <td>Course à pied</td>
+                            <td>30</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>2025-02-02</td>
+                            <td>Natation</td>
+                            <td>45</td>
+                            <td>450</td>
+                        </tr>
+                        <tr>
+                            <td>2025-02-03</td>
+                            <td>Vélo</td>
+                            <td>60</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>2025-02-04</td>
+                            <td>Marche rapide</td>
+                            <td>40</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>2025-02-05</td>
+                            <td>Yoga</td>
+                            <td>35</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-4 bg-dark">
+        <div class="text-center">
+            <span class="text-light">&copy; 2025 Health in Motion. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tableauActivites').DataTable({
+                // --- Suppression de la configuration AJAX ---
+                // "ajax": "../data/donnees_activites.json",
+
+                // --- Utilisation de données statiques ---
+                data: [{
+                    "date": "2025-02-01",
+                    "activite": "Course à pied",
+                    "duree": 30,
+                    "calories": 300
+                }, {
+                    "date": "2025-02-02",
+                    "activite": "Natation",
+                    "duree": 45,
+                    "calories": 450
+                }, {
+                    "date": "2025-02-03",
+                    "activite": "Vélo",
+                    "duree": 60,
+                    "calories": 600
+                }, {
+                    "date": "2025-02-04",
+                    "activite": "Marche rapide",
+                    "duree": 40,
+                    "calories": 250
+                }, {
+                    "date": "2025-02-05",
+                    "activite": "Yoga",
+                    "duree": 35,
+                    "calories": 200
+                }],
+                columns: [{
+                    data: 'date'
+                }, {
+                    data: 'activite'
+                }, {
+                    data: 'duree'
+                }, {
+                    data: 'calories'
+                }],
+                language: {
+                    "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json"
+                },
+                responsive: true,
+                // --- Suppression de scrollX pour l'instant ---
+                // scrollX: true
+            });
+        });
+    </script>
+</body>
+
+</html>

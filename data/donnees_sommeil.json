@@ -1,0 +1,26 @@
+[{
+        "date": "2025-07-15",
+        "duree": "7h 30min",
+        "qualite": "Bonne"
+    },
+    {
+        "date": "2025-07-16",
+        "duree": "6h 45min",
+        "qualite": "Moyenne"
+    },
+    {
+        "date": "2025-07-17",
+        "duree": "8h 15min",
+        "qualite": "Excellente"
+    },
+    {
+        "date": "2025-07-18",
+        "duree": "7h 00min",
+        "qualite": "Bonne"
+    },
+    {
+        "date": "2025-07-19",
+        "duree": "6h 30min",
+        "qualite": "Moyenne"
+    }
+]

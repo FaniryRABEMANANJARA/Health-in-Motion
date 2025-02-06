@@ -1,0 +1,642 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Police Roboto pour le corps du texte */
+    color: #4a4a4a;
+    /* Gris légèrement plus chaud pour le texte */
+    background-color: #f8f9fa;
+    line-height: 1.7;
+}
+
+
+/* Ajout de la police Roboto via Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.navbar {
+    background-color: #2d3e50 !important;
+    /* Bleu-gris plus profond pour la navbar */
+    padding: 1rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    /* Ombre subtile pour la navbar */
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .nav-link:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 32px;
+    /* Légèrement plus haut pour une meilleure présence */
+    margin-right: 12px;
+    border-radius: 15px;
+    /* Un peu plus d'espace à droite */
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.container {
+    margin-top: 35px;
+    /* Marge supérieure légèrement augmentée */
+    padding: 25px;
+    /* Padding intérieur un peu plus important */
+    background-color: #fff;
+    border-radius: 10px;
+    /* Bords encore plus arrondis */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    /* Ombre plus douce et étendue */
+}
+
+h1 {
+    color: #2d3e50;
+    /* Couleur du titre principal assortie à la navbar */
+    font-weight: 700;
+    /* Titre principal encore plus gras */
+    margin-bottom: 30px;
+    /* Plus de marge en bas du titre */
+    text-align: center;
+    font-size: 2.8rem;
+    /* Titre principal plus grand */
+    letter-spacing: -0.02em;
+    /* Léger espacement négatif pour un aspect plus condensé */
+}
+
+p {
+    color: #6a757d;
+    /* Gris légèrement plus foncé pour les paragraphes */
+    margin-bottom: 25px;
+    /* Marge en bas des paragraphes augmentée */
+    font-size: 1.1rem;
+    /* Taille de police légèrement augmentée pour les paragraphes */
+}
+
+.card {
+    margin-bottom: 35px;
+    /* Marge entre les cartes encore augmentée */
+    border: none;
+    border-radius: 12px;
+    /* Bords encore plus arrondis pour les cartes */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    /* Ombre plus douce et plus étendue pour les cartes */
+    transition: transform 0.25s ease-in-out;
+    /* Transition légèrement plus lente */
+}
+
+.card:hover {
+    transform: scale(1.04);
+    /* Zoom au survol légèrement plus important */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    /* Hauteur des images de carte légèrement augmentée */
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    /* Bords arrondis assortis aux cartes */
+    border-top-right-radius: 12px;
+    opacity: 0.95;
+    /* Légère réduction de l'opacité pour un effet subtil */
+    transition: opacity 0.3s ease-in-out;
+    /* Transition pour l'opacité au survol */
+}
+
+.card:hover .card-img-top {
+    /* Opacité pleine au survol de la carte */
+    opacity: 1;
+}
+
+.card-body {
+    padding: 30px;
+    /* Padding intérieur des corps de carte encore augmenté */
+}
+
+.card-title {
+    font-size: 1.4rem;
+    /* Titres de carte plus grands */
+    font-weight: 600;
+    /* Titres de carte légèrement moins gras */
+    color: #343a40;
+    /* Couleur des titres de carte légèrement plus claire */
+    margin-bottom: 18px;
+    /* Marge en bas des titres de carte augmentée */
+}
+
+.card-text {
+    color: #5a6268;
+    /* Texte des cartes dans une couleur grise plus douce */
+    font-size: 1.05rem;
+    /* Taille de police légèrement augmentée pour le texte des cartes */
+}
+
+.btn-primary {
+    background-color: #00a79d;
+    /* Vert turquoise plus dynamique comme couleur primaire */
+    border-color: #00a79d;
+    color: white;
+    /* Texte des boutons en blanc */
+    padding: 12px 25px;
+    /* Padding des boutons augmenté */
+    border-radius: 8px;
+    /* Bords des boutons plus arrondis */
+    font-weight: 500;
+    /* Texte des boutons légèrement plus gras */
+    box-shadow: 0 3px 8px rgba(0, 167, 157, 0.3);
+    /* Ombre colorée pour les boutons */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    /* Transition et transformation pour les boutons */
+}
+
+.btn-primary:hover {
+    background-color: #008078;
+    /* Couleur plus foncée au hover */
+    border-color: #008078;
+    transform: translateY(-2px);
+    /* Légère translation vers le haut au survol */
+    box-shadow: 0 5px 12px rgba(0, 167, 157, 0.4);
+    /* Ombre plus prononcée au survol */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: 600;
+    /* Met en gras et légèrement plus épais le lien actif */
+    color: white !important;
+    /* Lien actif en blanc */
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Pour navbar-dark, lien actif en blanc */
+    color: white !important;
+}
+
+.footer {
+    background-color: #343a40;
+    /* Garder le fond sombre actuel (ou votre couleur de fond de footer) */
+    padding: 20px 0;
+    position: fixed;
+    /* ou position: absolute; selon votre mise en page */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer .text-light {
+    color: #343a40;
+    /* Couleur de texte BLANC CASSÉ - plus clair et contrasté que "light" par défaut */
+    opacity: 0.9;
+    /* Légère opacité pour adoucir un peu le blanc si nécessaire */
+    font-size: 0.9rem;
+}
+
+
+/* ----------- Styles spécifiques à la page activités.html ----------- */
+
+.activity-banner {
+    position: relative;
+    margin-bottom: 40px;
+    /* Marge sous la bannière augmentée */
+    border-radius: 12px;
+    /* Bords arrondis de la bannière */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    /* Ombre plus marquée pour la bannière */
+}
+
+.activity-banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    /* Hauteur maximale de la bannière légèrement augmentée */
+    filter: brightness(0.9) contrast(1.05);
+    /* Léger filtre pour adoucir l'image */
+}
+
+.activity-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 62, 80, 0.6);
+    /* Overlay bleu-gris semi-transparent, assorti à la navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    /* Padding de l'overlay augmenté */
+}
+
+.activity-banner-title {
+    font-size: 3.2rem;
+    /* Titre de la bannière encore plus grand */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    /* Ombre sur le texte de la bannière plus prononcée */
+    letter-spacing: -0.03em;
+    /* Espacement négatif pour le titre de la bannière */
+    line-height: 1.2;
+    /* Line-height ajusté pour le titre de la bannière */
+}
+
+.activity-content {
+    padding: 25px 0;
+    /* Padding du contenu légèrement augmenté */
+}
+
+.activity-intro {
+    font-size: 1.2rem;
+    /* Texte d'intro légèrement plus grand */
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Marge sous l'intro augmentée */
+    font-style: italic;
+    /* Texte d'intro en italique pour un style plus doux */
+    opacity: 0.9;
+    /* Légère réduction de l'opacité de l'intro */
+}
+
+.unit {
+    font-size: 0.85em;
+    /* Style plus petit pour les unités dans les en-têtes de tableau */
+    color: #777;
+    font-style: normal;
+    /* Unités en style normal, pas italique */
+    margin-left: 0.2em;
+}
+
+
+/* ----------- Styles pour le tableau DataTables (REFINEMENT) ----------- */
+
+table.dataTable {
+    width: 100% !important;
+    margin-bottom: 30px;
+    /* Marge sous le tableau augmentée */
+    border-collapse: separate;
+    /* Bordures séparées pour un style plus léger */
+    border-spacing: 0;
+    font-size: 1rem;
+    /* Taille de police du tableau légèrement augmentée */
+    color: #555;
+    /* Couleur du texte du tableau légèrement plus claire */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    /* Ombre encore plus légère sur le tableau */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    /* Bordure très légère autour du tableau */
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+    padding: 18px 15px;
+    /* Padding de l'en-tête augmenté */
+    text-align: left;
+    background-color: #f9f9f9;
+    /* Fond encore plus clair pour l'en-tête */
+    color: #444;
+    /* Couleur du texte de l'en-tête légèrement plus claire */
+    border-bottom: 1px solid #ddd;
+    /* Bordure inférieure plus légère pour l'en-tête */
+    font-weight: 500;
+    /* En-tête légèrement moins gras */
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    /* Léger espacement des lettres dans l'en-tête */
+}
+
+table.dataTable tbody td {
+    padding: 15px 15px;
+    /* Padding des cellules du corps augmenté */
+    border-bottom: 1px solid #f2f2f2;
+    /* Bordure entre les lignes encore plus légère */
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+    /* Transition pour le survol des cellules */
+}
+
+table.dataTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* Lignes paires en blanc pour plus de contraste */
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #f5f5f5;
+    /* Couleur de survol des lignes légèrement plus claire */
+}
+
+table.dataTable thead th:active,
+table.dataTable thead th:focus {
+    outline: none;
+    background-color: #f2f2f2;
+    /* Fond légèrement plus foncé au clic, assorti au survol des lignes */
+}
+
+
+/* Styles pour les contrôles de pagination et d'information DataTables (REFINEMENT) */
+
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 18px;
+    /* Padding supérieur augmenté */
+    padding-bottom: 12px;
+    /* Padding inférieur légèrement augmenté */
+    color: #777;
+    /* Couleur du texte des contrôles légèrement plus claire */
+    font-size: 0.95rem;
+    /* Taille de police des contrôles légèrement réduite */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 9px 14px;
+    /* Padding des boutons de pagination augmenté */
+    margin: 0 4px;
+    /* Marge des boutons de pagination légèrement augmentée */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* Bords des boutons de pagination plus arrondis */
+    background-color: #fff;
+    color: #444;
+    /* Couleur du texte des boutons de pagination légèrement plus claire */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #f0f0f0;
+    /* Couleur de survol des boutons de pagination légèrement plus claire */
+    border-color: #ccc;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #00a79d;
+    /* Couleur primaire pour le bouton de pagination courant */
+    border-color: #00a79d;
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    opacity: 0.5;
+    /* Opacité réduite pour les boutons désactivés */
+    cursor: not-allowed;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 15px;
+    /* Marge inférieure des filtres et de la longueur augmentée */
+    color: #777;
+    /* Couleur du texte des filtres et de la longueur légèrement plus claire */
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* Bords des champs de filtre et de longueur plus arrondis */
+    padding: 7px 12px;
+    /* Padding des champs de filtre et de longueur augmenté */
+    margin-left: 6px;
+    /* Marge gauche des champs de filtre et de longueur légèrement augmentée */
+    font-size: 0.95rem;
+    /* Taille de police des champs de filtre et de longueur légèrement réduite */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    /* Ombre interne subtile pour les champs */
+}
+
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_length select:focus {
+    outline: none;
+    border-color: #00a79d;
+    /* Couleur primaire au focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 167, 157, 0.25);
+    /* Ombre au focus assortie à la couleur primaire */
+}
+
+.sleep-intro {
+    font-size: 1.15rem;
+    color: #5a6268;
+    text-align: center;
+    margin-bottom: 40px;
+    /* Marge sous l'intro du sommeil augmentée */
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.sleep-deck {
+    display: flex;
+    /* Utiliser flexbox pour le deck de cartes de sommeil */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Permettre aux cartes de se mettre à la ligne sur les petits écrans */
+    justify-content: center;
+    /* Centrer les cartes horizontalement */
+}
+
+.sleep-card {
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    /* Ombre pour les cartes de sommeil */
+    margin: 15px;
+    /* Marge autour des cartes de sommeil */
+    flex: 0 1 calc(30% - 30px);
+    /* Ajuster la largeur des cartes pour un affichage responsive (environ 3 par ligne sur écrans moyens/grands) */
+    min-width: 250px;
+    /* Largeur minimale des cartes */
+    transition: transform 0.2s ease-in-out;
+}
+
+.sleep-card:hover {
+    transform: scale(1.02);
+}
+
+.sleep-card .card-body {
+    padding: 25px;
+    text-align: left;
+    /* Aligner le texte à gauche dans les cartes de sommeil */
+}
+
+.sleep-date {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+    display: flex;
+    /* Pour aligner l'icône et la date */
+    align-items: center;
+}
+
+.sleep-date i {
+    margin-right: 10px;
+    color: #6c757d;
+    /* Couleur des icônes de date */
+}
+
+.sleep-duration {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    /* Pour aligner l'icône et la durée */
+    align-items: center;
+}
+
+.sleep-duration i {
+    margin-right: 10px;
+    color: #6c757d;
+    /* Couleur des icônes de durée */
+}
+
+.sleep-quality {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    /* Pour aligner l'icône et la qualité */
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligner à gauche */
+}
+
+.sleep-quality i {
+    margin-right: 10px;
+    color: #6c757d;
+    /* Couleur de base de l'icône lune */
+}
+
+
+/* Styles spécifiques pour la qualité du sommeil (couleurs) */
+
+.sleep-quality-excellente {
+    color: #28a745;
+    /* Vert pour excellente qualité */
+}
+
+.sleep-quality-excellente i {
+    color: #28a745;
+    /* Icône lune verte pour excellente qualité */
+}
+
+.sleep-quality-bonne {
+    color: #007bff;
+    /* Bleu pour bonne qualité */
+}
+
+.sleep-quality-bonne i {
+    color: #007bff;
+    /* Icône lune bleue pour bonne qualité */
+}
+
+.sleep-quality-moyenne {
+    color: #ffc107;
+    /* Jaune pour qualité moyenne */
+}
+
+.sleep-quality-moyenne i {
+    color: #ffc107;
+    /* Icône lune jaune pour qualité moyenne */
+}
+
+.sleep-quality-mauvaise {
+    color: #dc3545;
+    /* Rouge pour mauvaise qualité (si vous aviez cette catégorie) */
+}
+
+.sleep-quality-mauvaise i {
+    color: #dc3545;
+    /* Icône lune rouge pour mauvaise qualité */
+}
+
+.nutrition-intro {
+    font-size: 1.15rem;
+    color: #5a6268;
+    text-align: center;
+    margin-bottom: 40px;
+    /* Marge sous l'intro nutrition augmentée */
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.nutrition-deck {
+    display: flex;
+    /* Utiliser flexbox pour le deck de cartes nutrition */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Permettre aux cartes de se mettre à la ligne sur les petits écrans */
+    justify-content: center;
+    /* Centrer les cartes horizontalement */
+}
+
+.nutrition-card {
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour les cartes nutrition */
+    margin: 15px;
+    /* Marge autour des cartes nutrition */
+    flex: 0 1 calc(30% - 30px);
+    /* Ajuster la largeur des cartes pour un affichage responsive (environ 3 par ligne sur écrans moyens/grands) */
+    min-width: 250px;
+    /* Largeur minimale des cartes */
+    transition: transform 0.2s ease-in-out;
+}
+
+.nutrition-card:hover {
+    transform: scale(1.02);
+}
+
+.nutrition-card .card-body {
+    padding: 25px;
+    text-align: left;
+    /* Aligner le texte à gauche dans les cartes nutrition */
+}
+
+.nutrition-tip-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+    display: flex;
+    /* Pour aligner l'icône et le titre */
+    align-items: center;
+}
+
+.nutrition-tip-title i.nutrition-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    /* Taille des icônes nutrition */
+    color: #00a79d;
+    /* Couleur des icônes nutrition - couleur d'accent */
+}
+
+.nutrition-tip-text {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+}

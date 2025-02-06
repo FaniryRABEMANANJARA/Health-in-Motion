@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Nutrition - Health in Motion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand-container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/icons/logo.webp" alt="Health in Motion Logo" class="navbar-logo"> Health in Motion
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activites.html">Activités</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sommeil.html">Sommeil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Conseils Nutritionnels</h1>
+
+        <p class="nutrition-intro">Découvrez des conseils simples et efficaces pour améliorer votre alimentation au quotidien et adopter de meilleures habitudes nutritionnelles.</p>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!- Centrage des cartes sur écrans moyens et grands -->
+                <div class="card-deck nutrition-deck">
+                    <!- Utilisation de card-deck pour un affichage responsive des cartes -->
+
+                    <div class="card nutrition-card">
+                        <div class="card-body">
+                            <h3 class="card-title nutrition-tip-title"><i class="fas fa-apple-alt nutrition-icon"></i> Fruits et légumes de saison</h3>
+                            <!- Titre avec icône pomme -->
+                            <p class="card-text nutrition-tip-text">Privilégiez les fruits et légumes de saison pour une alimentation riche en vitamines et minéraux.</p>
+                        </div>
+                    </div>
+
+                    <div class="card nutrition-card">
+                        <div class="card-body">
+                            <h3 class="card-title nutrition-tip-title"><i class="fas fa-tint nutrition-icon"></i> Hydratation régulière</h3>
+                            <!- Titre avec icône goutte d'eau -->
+                            <p class="card-text nutrition-tip-text">Hydratez-vous régulièrement tout au long de la journée, en particulier pendant et après l'activité physique.</p>
+                        </div>
+                    </div>
+
+                    <div class="card nutrition-card">
+                        <div class="card-body">
+                            <h3 class="card-title nutrition-tip-title"><i class="fas fa-egg nutrition-icon"></i> Protéines variées</h3>
+                            <!- Titre avec icône oeuf -->
+                            <p class="card-text nutrition-tip-text">Variez vos sources de protéines (viande maigre, poisson, œufs, légumineuses, tofu) pour un apport équilibré.</p>
+                        </div>
+                    </div>
+
+                    <div class="card nutrition-card">
+                        <div class="card-body">
+                            <h3 class="card-title nutrition-tip-title"><i class="fas fa-にならない nutrition-icon"></i> Limitez les produits transformés</h3>
+                            <!- Icône "interdit" (à remplacer par une icône plus appropriée si besoin) -->
+                            <p class="card-text nutrition-tip-text">Limitez votre consommation de produits transformés, riches en sucres ajoutés, sel et graisses saturées.</p>
+                        </div>
+                    </div>
+
+                    <div class="card nutrition-card">
+                        <div class="card-body">
+                            <h3 class="card-title nutrition-tip-title"><i class="fas fa-utensils nutrition-icon"></i> Cuisine maison</h3>
+                            <!- Titre avec icône ustensiles de cuisine -->
+                            <p class="card-text nutrition-tip-text">Cuisinez maison autant que possible pour contrôler les ingrédients et les portions.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!- Fin card-deck -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-4 bg-dark">
+        <div class="text-center">
+            <span class="text-light">&copy; 2025 Health in Motion. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+    <!- Lien vers script.js -->
+</body>
+
+</html>

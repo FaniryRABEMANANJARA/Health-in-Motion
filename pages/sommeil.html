@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sommeil - Health in Motion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand-container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/icons/logo.webp" alt="Health in Motion Logo" class="navbar-logo"> Health in Motion
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activites.html">Activités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sommeil.html">Sommeil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Suivi du Sommeil</h1>
+
+        <p class="sleep-intro">Retrouvez ici l'historique de votre sommeil. Un sommeil de qualité est essentiel pour votre bien-être général.</p>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!- Centrage des cartes sur écrans moyens et grands -->
+                <div class="card-deck sleep-deck">
+                    <!- Utilisation de card-deck pour un affichage responsive des cartes -->
+
+                    <div class="card sleep-card">
+                        <div class="card-body">
+                            <h3 class="card-title sleep-date"><i class="far fa-calendar"></i> 2025-07-19</h3>
+                            <!- Date avec icône calendrier -->
+                            <p class="card-text sleep-duration"><i class="far fa-clock"></i> Durée: 6h 30min</p>
+                            <!- Durée avec icône horloge -->
+                            <div class="sleep-quality sleep-quality-moyenne"><i class="fas fa-moon"></i> Qualité: Moyenne</div>
+                            <!- Qualité avec icône lune et classe spécifique -->
+                        </div>
+                    </div>
+
+                    <div class="card sleep-card">
+                        <div class="card-body">
+                            <h3 class="card-title sleep-date"><i class="far fa-calendar"></i> 2025-07-18</h3>
+                            <p class="card-text sleep-duration"><i class="far fa-clock"></i> Durée: 7h 00min</p>
+                            <div class="sleep-quality sleep-quality-bonne"><i class="fas fa-moon"></i> Qualité: Bonne</div>
+                        </div>
+                    </div>
+
+                    <div class="card sleep-card">
+                        <div class="card-body">
+                            <h3 class="card-title sleep-date"><i class="far fa-calendar"></i> 2025-07-17</h3>
+                            <p class="card-text sleep-duration"><i class="far fa-clock"></i> Durée: 8h 15min</p>
+                            <div class="sleep-quality sleep-quality-excellente"><i class="fas fa-moon"></i> Qualité: Excellente</div>
+                        </div>
+                    </div>
+
+                    <div class="card sleep-card">
+                        <div class="card-body">
+                            <h3 class="card-title sleep-date"><i class="far fa-calendar"></i> 2025-07-16</h3>
+                            <p class="card-text sleep-duration"><i class="far fa-clock"></i> Durée: 6h 45min</p>
+                            <div class="sleep-quality sleep-quality-moyenne"><i class="fas fa-moon"></i> Qualité: Moyenne</div>
+                        </div>
+                    </div>
+
+                    <div class="card sleep-card">
+                        <div class="card-body">
+                            <h3 class="card-title sleep-date"><i class="far fa-calendar"></i> 2025-07-15</h3>
+                            <p class="card-text sleep-duration"><i class="far fa-clock"></i> Durée: 7h 30min</p>
+                            <div class="sleep-quality sleep-quality-bonne"><i class="fas fa-moon"></i> Qualité: Bonne</div>
+                        </div>
+                    </div>
+
+                </div>
+                <!- Fin card-deck -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-4 bg-dark">
+        <div class="text-center">
+            <span class="text-light">&copy; 2025 Health in Motion. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+    <!- Lien vers script.js -->
+</body>
+
+</html>
